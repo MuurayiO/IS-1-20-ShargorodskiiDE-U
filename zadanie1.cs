@@ -15,6 +15,7 @@ namespace IS_1_20_ShargorodskiiDE_U
         public zadanie1()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         HardDisk hdd;
@@ -34,7 +35,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             }
             public void Display()
             {
-                MessageBox.Show($"Цена: {price}, Год выпуска: {date}, Артикул: {article}");
+                MessageBox.Show($"Цена: {price} \n Год выпуска: {date} \n Артикул: {article}");
             }
         }
         public class HardDisk : Device<string>
@@ -51,8 +52,8 @@ namespace IS_1_20_ShargorodskiiDE_U
             }
             public new void Display()
             {
-                MessageBox.Show($"Цена: {price}, Год выпуска: {date}, Артикул: {article}, " +
-                    $"Количество Оборотов: {turns}, Интерфейс: {interfaceA}, Объем: {size}");
+                MessageBox.Show($" Цена: {price} \n Год выпуска: {date} \n Артикул: {article} \n " +
+                    $"Количество Оборотов: {turns} \n Интерфейс: {interfaceA} \n Объем: {size}");
             }
 
         }
@@ -70,24 +71,55 @@ namespace IS_1_20_ShargorodskiiDE_U
             }
             public new void Display()
             {
-                MessageBox.Show($"Цена: {price}, Год выпуска: {date}, Артикул: {article}, Частота GPU: {freqGPU}, " +
-                    $"Производитель: {brand}, Объем памяти: {sizeMemory} гб");
+                MessageBox.Show($" Цена: {price} \n Год выпуска: {date} \n Артикул: {article} \n Частота GPU: {freqGPU} \n " +
+                    $"Производитель: {brand} \n Объем памяти: {sizeMemory} гб");
             }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                listBox1.Items.Clear();
+                listBox1.Items.Add($"Цена: {guna2TextBox1.Text}");
+                listBox1.Items.Add($"Год выпуска: {guna2TextBox2.Text}");
+                listBox1.Items.Add($"Артикул: {guna2TextBox3.Text}");
+                listBox1.Items.Add($"Количество оборотов: {guna2TextBox6.Text}");
+                listBox1.Items.Add($"Интерфейс: {guna2TextBox5.Text}");
+                listBox1.Items.Add($"Объем: {guna2TextBox4.Text}");
 
-            double price = Convert.ToDouble(guna2TextBox1.Text);
-            int date = Convert.ToInt32(guna2TextBox2.Text);
-            string article = guna2TextBox3.Text;
-            int turns = Convert.ToInt32(guna2TextBox4.Text);
-            string interfaceA = guna2TextBox5.Text;
-            int size = Convert.ToInt32(guna2TextBox6.Text);
+                hdd = new HardDisk(Convert.ToInt32(guna2TextBox1.Text), Convert.ToInt32(guna2TextBox2.Text), guna2TextBox3.Text, 
+                    Convert.ToInt32(guna2TextBox6.Text), guna2TextBox5.Text, Convert.ToInt32(guna2TextBox4.Text));
 
-            hdd = new HardDisk(price, date, article, turns, interfaceA, size);
+                hdd.Display();
+            }
+            catch
+            {
+                MessageBox.Show("Заполните поля");
+            }
+        }
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listBox1.Items.Clear();
+                listBox1.Items.Add($"Цена: {guna2TextBox1.Text}");
+                listBox1.Items.Add($"Год выпуска: {guna2TextBox2.Text}");
+                listBox1.Items.Add($"Артикул: {guna2TextBox3.Text}");
+                listBox1.Items.Add($"Частота GPU: {guna2TextBox9.Text}");
+                listBox1.Items.Add($"Производитель: {guna2TextBox8.Text}");
+                listBox1.Items.Add($"Объем памяти: {guna2TextBox7.Text}");
+
+                gpu = new GPU(Convert.ToInt32(guna2TextBox1.Text), Convert.ToInt32(guna2TextBox2.Text), guna2TextBox3.Text, 
+                    Convert.ToInt32(guna2TextBox9.Text), guna2TextBox8.Text, Convert.ToInt32(guna2TextBox7.Text));
+
+                gpu.Display();
+            }
+            catch
+            {
+                MessageBox.Show("Заполните поля");
+            }
         }
     }
 }

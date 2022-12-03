@@ -43,6 +43,9 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2ControlBox2
@@ -52,7 +55,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(408, 9);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(473, 9);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 4;
@@ -63,7 +66,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2ControlBox1.BorderRadius = 10;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(459, 9);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(524, 9);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 3;
@@ -96,9 +99,9 @@ namespace IS_1_20_ShargorodskiiDE_U
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(204, 44);
+            this.listBox1.Location = new System.Drawing.Point(13, 160);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(286, 342);
+            this.listBox1.Size = new System.Drawing.Size(541, 225);
             this.listBox1.TabIndex = 6;
             // 
             // guna2TextBox2
@@ -167,7 +170,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2TextBox4.Font = new System.Drawing.Font("Mont Bold", 8.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox4.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(13, 239);
+            this.guna2TextBox4.Location = new System.Drawing.Point(196, 122);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
@@ -192,7 +195,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2TextBox5.Font = new System.Drawing.Font("Mont Bold", 8.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox5.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(13, 200);
+            this.guna2TextBox5.Location = new System.Drawing.Point(196, 83);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
@@ -217,7 +220,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2TextBox6.Font = new System.Drawing.Font("Mont Bold", 8.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox6.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(13, 161);
+            this.guna2TextBox6.Location = new System.Drawing.Point(196, 44);
             this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
@@ -242,7 +245,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2TextBox7.Font = new System.Drawing.Font("Mont Bold", 8.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox7.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(13, 356);
+            this.guna2TextBox7.Location = new System.Drawing.Point(379, 122);
             this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
@@ -267,7 +270,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2TextBox8.Font = new System.Drawing.Font("Mont Bold", 8.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox8.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(13, 317);
+            this.guna2TextBox8.Location = new System.Drawing.Point(379, 83);
             this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
@@ -292,7 +295,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2TextBox9.Font = new System.Drawing.Font("Mont Bold", 8.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox9.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(13, 278);
+            this.guna2TextBox9.Location = new System.Drawing.Point(379, 44);
             this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox9.Name = "guna2TextBox9";
             this.guna2TextBox9.PasswordChar = '\0';
@@ -330,18 +333,52 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button2.Font = new System.Drawing.Font("Mont Bold", 9.749999F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(255, 394);
+            this.guna2Button2.Location = new System.Drawing.Point(318, 394);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(236, 61);
             this.guna2Button2.TabIndex = 16;
             this.guna2Button2.Text = "Вывод информации GPU";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mont Bold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(193, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 18);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "HDD";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mont Bold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(376, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 18);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "GPU";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Mont Bold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(10, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 18);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Общее";
             // 
             // zadanie1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(516, 463);
+            this.ClientSize = new System.Drawing.Size(581, 463);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2TextBox7);
@@ -360,6 +397,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.Name = "zadanie1";
             this.Text = "zadanie1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -379,5 +417,8 @@ namespace IS_1_20_ShargorodskiiDE_U
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

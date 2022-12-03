@@ -15,6 +15,7 @@ namespace IS_1_20_ShargorodskiiDE_U
         public Menu()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -22,6 +23,8 @@ namespace IS_1_20_ShargorodskiiDE_U
             zadanie1 Zad1 = new zadanie1();
             Zad1.ShowDialog();
         }
+
+        
     }
 
 }
