@@ -16,6 +16,7 @@ namespace IS_1_20_ShargorodskiiDE_U
         public zadanie2()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         class SQL
