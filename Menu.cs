@@ -24,7 +24,11 @@ namespace IS_1_20_ShargorodskiiDE_U
             Zad1.ShowDialog();
         }
 
-        
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            zadanie2 Zad2 = new zadanie2();
+            Zad2.ShowDialog();
+        }
     }
 
 }

@@ -98,7 +98,9 @@ namespace IS_1_20_ShargorodskiiDE_U
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Mont Bold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(13, 160);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(541, 225);
