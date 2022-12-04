@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 
 namespace IS_1_20_ShargorodskiiDE_U
 {
@@ -15,6 +17,65 @@ namespace IS_1_20_ShargorodskiiDE_U
         public zadanie3()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_31;database=is_1_20_st31_KURS;password=14639122;";
+        MySqlConnection conn;
+
+        private void zadanie3_Load(object sender, EventArgs e)
+        {
+            conn = new MySqlConnection(connStr);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                conn.Open();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка при подключении к базе данных!");
+            }
+            finally
+            {
+                MessageBox.Show("Подключение прошло успешно!");
+                conn.Close();
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                
+                MySqlCommand command = new MySqlCommand($"SELECT id_catalog, title_weapon, category_weapon, price_weapon " +
+                    $"FROM T_catalog INNER JOIN login_password ON T_catalog.id_catalog;", conn);
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int row = guna2DataGridView1.Rows.Add();
+                    guna2DataGridView1.Rows[row].Cells[0].Value = reader[0].ToString();
+                    guna2DataGridView1.Rows[row].Cells[1].Value = reader[1].ToString();
+                    guna2DataGridView1.Rows[row].Cells[2].Value = reader[2].ToString();
+                    guna2DataGridView1.Rows[row].Cells[3].Value = reader[3].ToString();
+                }
+
+                reader.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка получения данных");
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }
