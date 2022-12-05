@@ -65,7 +65,7 @@ namespace IS_1_20_ShargorodskiiDE_U
                     guna2DataGridView1.Rows[row].Cells[2].Value = reader[2].ToString();
                     guna2DataGridView1.Rows[row].Cells[3].Value = reader[3].ToString();
                 }
-
+                
                 reader.Close();
             }
             catch
@@ -76,6 +76,16 @@ namespace IS_1_20_ShargorodskiiDE_U
             {
                 conn.Close();
             }
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {            
+            string id = guna2DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            string title = guna2DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            string category = guna2DataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            string price = guna2DataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+
+            MessageBox.Show($" ID: {id} \n Название: {title} \n Категория: {category} \n Цена: {price}");
         }
     }
 }

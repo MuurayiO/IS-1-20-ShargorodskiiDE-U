@@ -95,22 +95,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="zadanie1.cs">
+    <Compile Include="Zadaniya\zadanie1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="zadanie1.Designer.cs">
+    <Compile Include="Zadaniya\zadanie1.Designer.cs">
       <DependentUpon>zadanie1.cs</DependentUpon>
     </Compile>
-    <Compile Include="zadanie2.cs">
+    <Compile Include="Zadaniya\zadanie2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="zadanie2.Designer.cs">
+    <Compile Include="Zadaniya\zadanie2.Designer.cs">
       <DependentUpon>zadanie2.cs</DependentUpon>
     </Compile>
-    <Compile Include="zadanie3.cs">
+    <Compile Include="Zadaniya\zadanie3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="zadanie3.Designer.cs">
+    <Compile Include="Zadaniya\zadanie3.Designer.cs">
       <DependentUpon>zadanie3.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Menu.resx">
@@ -125,13 +125,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="zadanie1.resx">
+    <EmbeddedResource Include="Zadaniya\zadanie1.resx">
       <DependentUpon>zadanie1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="zadanie2.resx">
+    <EmbeddedResource Include="Zadaniya\zadanie2.resx">
       <DependentUpon>zadanie2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="zadanie3.resx">
+    <EmbeddedResource Include="Zadaniya\zadanie3.resx">
       <DependentUpon>zadanie3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
