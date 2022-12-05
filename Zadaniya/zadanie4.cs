@@ -69,13 +69,13 @@ namespace IS_1_20_ShargorodskiiDE_U
 
                 string picture = command.ExecuteScalar().ToString();
 
-                guna2PictureBox1.ImageLocation = $"{picture}";
+                guna2PictureBox1.ImageLocation = picture;
 
             }
 
             catch
             {
-                MessageBox.Show("Ошибка при получении данных!");
+                MessageBox.Show("Ошибка загрузки фото");
             }
             finally
             {
