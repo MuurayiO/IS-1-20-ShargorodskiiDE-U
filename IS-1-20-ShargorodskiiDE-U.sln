@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS-1-20-ShargorodskiiDE-U", "IS-1-20-ShargorodskiiDE-U.csproj", "{23604559-FE8B-4E29-89E7-FBBBC42E0397}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectDB", "..\ConnectDB\ConnectDB.csproj", "{F8053112-ABE4-4FC7-8C64-A44C0EF37AF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectDB", "ConnectDB\ConnectDB.csproj", "{F8053112-ABE4-4FC7-8C64-A44C0EF37AF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
