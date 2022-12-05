@@ -59,11 +59,11 @@ namespace IS_1_20_ShargorodskiiDE_U
 
                 while (reader.Read())
                 {
-                    int row = guna2DataGridView1.Rows.Add();
-                    guna2DataGridView1.Rows[row].Cells[0].Value = reader[0].ToString();
-                    guna2DataGridView1.Rows[row].Cells[1].Value = reader[1].ToString();
-                    guna2DataGridView1.Rows[row].Cells[2].Value = reader[2].ToString();
-                    guna2DataGridView1.Rows[row].Cells[3].Value = reader[3].ToString();
+                    int grid = guna2DataGridView1.Rows.Add();
+                    guna2DataGridView1.Rows[grid].Cells[0].Value = reader[0].ToString();
+                    guna2DataGridView1.Rows[grid].Cells[1].Value = reader[1].ToString();
+                    guna2DataGridView1.Rows[grid].Cells[2].Value = reader[2].ToString();
+                    guna2DataGridView1.Rows[grid].Cells[3].Value = reader[3].ToString();
                 }
                 
                 reader.Close();

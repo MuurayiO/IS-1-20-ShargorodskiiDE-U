@@ -131,6 +131,7 @@ namespace IS_1_20_ShargorodskiiDE_U
             this.guna2Button4.Size = new System.Drawing.Size(180, 45);
             this.guna2Button4.TabIndex = 5;
             this.guna2Button4.Text = "Задание 4";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button5
             // 
